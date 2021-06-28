@@ -19,6 +19,7 @@ class ChatViewController: UIViewController {
         let view = UITableView()
         view.delegate = self
         view.dataSource = self
+        view.separatorStyle = UITableViewCell.SeparatorStyle.none
         return view
     }()
     
@@ -34,6 +35,7 @@ class ChatViewController: UIViewController {
     }
     
     private func setupUI(){
+        title = "Chats"
         setupAddSubview()
         setupMakeContraints()
     }
@@ -59,17 +61,25 @@ extension ChatViewController: ChatDelegate {
 
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(DialogViewController.newInstance(chat: self.chats[indexPath.row]), animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.chats.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let chat = self.chats[indexPath.row]
-        let cell = UITableViewCell()
-        cell.textLabel?.text = chat.name
+        let cell = ChatCell()
+        cell.fill(chat: chat)
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
         
 
 }

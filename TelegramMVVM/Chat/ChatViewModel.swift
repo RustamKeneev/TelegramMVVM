@@ -23,7 +23,23 @@ class ChatViewModel {
     }
     
     func loadChat() {
-        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://who.ca-news.org/people:28159?embed&pack=109"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        chats.append(ChatModel(name: "Rustam", lastMessage: "How are you", urlMessage: "https://www.vectorstock.com/royalty-free-vector/king-human-head-logo-icon-design-vector-22441094"))
+        
         delegate?.showChat(chats: chats)
     }
 }
