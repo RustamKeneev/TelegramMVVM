@@ -14,7 +14,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.pushViewController(ChatViewController(), animated: true)
+        navigationController?.pushViewController(LoginViewController(), animated: true)
         
     }
     
