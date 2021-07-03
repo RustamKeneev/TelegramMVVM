@@ -36,6 +36,7 @@ class ChatViewController: UIViewController {
     
     private func setupUI(){
         title = "Chats"
+        navigationItem.backBarButtonItem?.isEnabled = false
         setupAddSubview()
         setupMakeContraints()
     }

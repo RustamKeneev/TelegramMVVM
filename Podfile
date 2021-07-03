@@ -8,6 +8,9 @@ target 'TelegramMVVM' do
   # Pods for TelegramMVVM
     pod 'SnapKit'
     pod 'Kingfisher'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'	
 
   target 'TelegramMVVMTests' do
     inherit! :search_paths
